@@ -10,7 +10,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
 
-
     <style>
       * {
         box-sizing: border-box;
@@ -40,7 +39,7 @@
         gap: 30px;
       }
 
-      nav ul li i{
+      nav ul li i {
         font-size: 25px;
       }
 
@@ -84,6 +83,39 @@
         padding: 10px 30px;
         border-radius: 5px;
       }
+
+      #bar {
+        display: none;
+      }
+
+      @media screen and (max-width: 768px) {
+        nav{
+            padding-inline: 5%;
+        }
+        nav ul{
+            display: none;
+        }
+        #bar {
+            display: block;
+        }
+        #hero-section {
+          padding-inline: 5%;
+        }
+        #hero-section h1 {
+          font-size: 30px;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        #hero-section {
+            display: block;
+        }
+        #hero-section img {
+          width: 100%;
+        }
+        #hero-section > div {
+            width: 100%;
+        }
+      }
     </style>
   </head>
   <body>
@@ -98,13 +130,17 @@
       <button>CB</button>
 
       <ul>
-        <li><i style="color: lightblue;" class="fa-brands fa-twitter"></i></li>
+        <li><i style="color: lightblue" class="fa-brands fa-twitter"></i></li>
         <li><i class="fa-brands fa-github"></i></li>
-        <li><i style="color: blue;" class="fa-brands fa-linkedin"></i></li>
-        <li><i style="color: red;" class="fa-brands fa-pinterest"></i></li>
-        <li><i style="color: pink;" class="fa-solid fa-bowling-ball"></i></li>
+        <li><i style="color: blue" class="fa-brands fa-linkedin"></i></li>
+        <li><i style="color: red" class="fa-brands fa-pinterest"></i></li>
+        <li><i style="color: pink" class="fa-solid fa-bowling-ball"></i></li>
         <li><i class="fa-solid fa-moon"></i></li>
       </ul>
+
+
+      <i id="bar" class="fa-solid fa-bars"></i>
+      
     </nav>
 
     <div id="hero-section">
